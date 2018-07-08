@@ -35,14 +35,14 @@ set ruler " ルーラーを表示
 set laststatus=2 " 常にステータラスラインを表示
 set showmatch " 対応する括弧をハイライト
 set number " 行番号表示
-""set list " 不可視文字表示
+set list " 不可視文字表示
 "set listchars=tab:>\ ,extends:<
 "" 全角スペースの表示
-"highlight ZenkakuSpace cterm=underline ctermfg=red guibg=darkgray
-"match ZenkakuSpace /　/
+highlight ZenkakuSpace cterm=underline ctermfg=red guibg=darkgray
+match ZenkakuSpace /　/
 set cursorline " カーソル行をハイライト
 "set ttyfast " 高速ターミナル接続を行う
-""set paste " vim-endwiseが効かない see -> https://github.com/tpope/vim-endwise/issues/15
+"set paste " vim-endwiseが効かない see -> https://github.com/tpope/vim-endwise/issues/15
 
 "------------------------------------
 " Color
@@ -201,7 +201,8 @@ set hlsearch " 検索文字をハイライト
 "------------------------------------
 " NERDTree
 "------------------------------------
-"nmap <Leader>e :NERDTreeToggle<CR>
+nmap <Leader>e :NERDTreeToggle<CR>
+"autocmd VimEnter * execute 'NERDTree' " 起動時に開く
 
 "------------------------------------
 " neosnippet
@@ -355,23 +356,23 @@ endif
 " Required:
 set runtimepath+=/Users/naotaka/.cache/dein/repos/github.com/Shougo/dein.vim
 
-" Required:
-if dein#load_state('/Users/naotaka/.cache/dein')
-  call dein#begin('/Users/naotaka/.cache/dein')
+" プラグインがインストールされるディレクトリ
+let s:dein_dir = expand('~/.cache/dein')
+if dein#load_state(s:dein_dir)
+  call dein#begin(s:dein_dir)
 
-  " Let dein manage dein
-  " Required:
-  call dein#add('/Users/naotaka/.cache/dein/repos/github.com/Shougo/dein.vim')
+  let g:python_host_prog=$PYENV_ROOT.'/versions/neovim-2/bin/python'
+  let g:python3_host_prog=$PYENV_ROOT.'/versions/neovim-3/bin/python'
 
-  " Add or remove your plugins here:
-" call dein#add('Shougo/neosnippet.vim')
-" call dein#add('Shougo/neosnippet-snippets')
-  call dein#add('vim-ruby/vim-ruby', {'on_ft' : 'ruby'})
-  call dein#add('tpope/vim-endwise', {'on_ft' : 'ruby'})
-  call dein#add('tpope/vim-rails', {'on_ft' : 'ruby'})
+  " プラグインリストを収めた TOML ファイル
+  " 予め TOML ファイルを用意しておく
+  let g:rc_dir    = expand("~/.config/nvim/")
+  let s:toml      = g:rc_dir . '/dein.toml'
+  let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
 
-  " You can specify revision/branch/tag.
-  call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
+  " TOML を読み込み、キャッシュしておく
+  call dein#load_toml(s:toml,      {'lazy': 0})
+  call dein#load_toml(s:lazy_toml, {'lazy': 1})
 
   " Required:
   call dein#end()
