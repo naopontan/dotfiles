@@ -250,7 +250,7 @@ set hlsearch " 検索文字をハイライト
 "let g:quickrun_config={'*': {'split': ''}}
 " 横分割時は下へ､ 縦分割時は右へ新しいウィンドウが開くようにする
 "set splitbelow
-"set splitright
+set splitright
 
 " PHPUnit
 "augroup PHPUnitQuickRun
@@ -364,8 +364,8 @@ if dein#load_state('/Users/naotaka/.cache/dein')
   call dein#add('/Users/naotaka/.cache/dein/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here:
-  call dein#add('Shougo/neosnippet.vim')
-  call dein#add('Shougo/neosnippet-snippets')
+" call dein#add('Shougo/neosnippet.vim')
+" call dein#add('Shougo/neosnippet-snippets')
   call dein#add('vim-ruby/vim-ruby', {'on_ft' : 'ruby'})
   call dein#add('tpope/vim-endwise', {'on_ft' : 'ruby'})
   call dein#add('tpope/vim-rails', {'on_ft' : 'ruby'})
