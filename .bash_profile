@@ -70,3 +70,7 @@ eval "$(pyenv init -)"
 
 export HISTIGNORE=history:exit
 #export HISTFILE=$HOME/Dropbox/bash_history
+
+# java jdk
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
