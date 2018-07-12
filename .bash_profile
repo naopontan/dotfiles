@@ -20,7 +20,12 @@ eval "$(nodenv init -)"
 #PS1='[\u@\h \W]\$ ' # default
 #source ~/.git-prompt.sh
 #PS1='\[\e[1;34m\][\u@\h \W]\$\[\e[m\] $(__git_ps1) '
-PS1='\[\e[1;34m\][\u@\h \W]\$\[\e[m\] '
+#PS1='\[\e[1;34m\][\u@\h \W]\$\[\e[m\] '
+
+# pro git
+# 以下は効かない!?
+#export GIT_PS1_SHOWDIRTYSTSTE=1
+#export PS1='\w$(__git_ps1 " (%s))"\$'
 
 # brew install bash-completion
 if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
