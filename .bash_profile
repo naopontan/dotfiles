@@ -74,3 +74,6 @@ export HISTIGNORE=history:exit
 # java jdk
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+
+#alias mvim='/Applications/MacVim.app/Contents/bin/gvim -U ~/.mvimrc'
+#alias mvim='/Applications/MacVim.app/Contents/bin/mvim "$@"'

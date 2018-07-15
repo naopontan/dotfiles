@@ -13,7 +13,7 @@ alias more='less'
 alias ll='ls -TlF'
 alias la='ls -TlaF'
 alias ltr='ls -TltrF'
-alias vi='nvim'
+#alias vi='nvim'
 alias cp='cp -i'
 
 export HISTSIZE=90000
