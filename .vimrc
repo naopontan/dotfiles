@@ -156,17 +156,12 @@ inoremap <C-l> <Right>
 nmap <Leader>e :NERDTreeToggle<CR>
 let g:NERDTreeShowBookmarks=1
 
-"function s:MoveToFileAtStart()
-"  "call feedkeys("\<Space>")
-"  "call feedkeys("\s")
-"  "call feedkeys("\l")
-"  call feedkeys("\<C-L>")
-"endfunction
-"autocmd VimEnter *  NERDTree | call s:MoveToFileAtStart()
+function s:MoveToFileAtStart()
+  call feedkeys("\<C-w>l")
+endfunction
+autocmd VimEnter *  NERDTree|call s:MoveToFileAtStart()
 
-"autocmd VimEnter * execute 'NERDTree'
-"autocmd VimEnter * execute 'NERDTree'
-autocmd vimenter * NERDTree|normal gg3j
+"autocmd vimenter * NERDTree|normal gg3j
 
 "------------------------------------
 " NERDTree-iterm
