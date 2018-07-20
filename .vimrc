@@ -163,6 +163,9 @@ autocmd VimEnter *  NERDTree|call s:MoveToFileAtStart()
 
 "autocmd vimenter * NERDTree|normal gg3j
 
+"他のバッファをすべて閉じた時にNERDTreeが開いていたらNERDTreeも一緒に閉じる。
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif"
+
 "------------------------------------
 " NERDTree-iterm
 "------------------------------------
