@@ -76,7 +76,7 @@ if has("autocmd")
   "
   "" expandtab = et タブ文字を空白に展開する
   "" tabstop = ts ファイル内の <Tab> が対応する空白の数
-  "" softtabstop = sts タブキーを押したときに挿入される空白の量
+  set softtabstop=2 " タブキーを押したときに挿入される空白の量
   "" shiftwidth = sw 自動インデントの各段階に使われる空白の数
   "
   "autocmd FileType php        setlocal ts=2 sts=2 sw=2 noexpandtab
