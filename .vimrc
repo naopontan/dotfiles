@@ -71,6 +71,10 @@ syntax enable " ハイライト on
 "set smartindent " 新しい行のインデントを現在行と同じ数に
 "set smarttab
 
+set expandtab
+"set tabstop=2
+"set shiftwidth=2
+
 if has("autocmd")
   "autocmd FileType * set formatoptions-=ro " 改行時にコメントしない
   "
