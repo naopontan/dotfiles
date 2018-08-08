@@ -15,6 +15,7 @@ alias la='ls -TlaF'
 alias ltr='ls -TltrF'
 #alias vi='nvim'
 alias cp='cp -i'
+alias be='bundle exec'
 
 export HISTSIZE=90000
 export HISTFILESIZE=90000
