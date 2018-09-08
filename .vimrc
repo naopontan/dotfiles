@@ -148,9 +148,11 @@ inoremap  <C-a> <HOME>
 "inoremap <C-k> <Up>
 "inoremap <C-h> <Left> " この設定を有効にしてたの忘れてハマった
 "inoremap <C-l> <Right>
-" インサートモードのjjでEsc
+
+" インサートモードでのEsc
 "inoremap <silent> jj <ESC>
-"inoremap <silent> <C-j> <esc>
+"inoremap <silent> <C-j> <ESC>
+inoremap <silent> <C-[> <ESC>
 
 " ビジュアルモード時vで行末まで選択
 "vnoremap v $h
