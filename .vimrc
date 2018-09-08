@@ -144,10 +144,10 @@ set hlsearch " 検索文字をハイライト
 inoremap  <C-e> <END>
 inoremap  <C-a> <HOME>
 " インサートモードでもhjklで移動
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
-inoremap <C-h> <Left>
-inoremap <C-l> <Right>
+"inoremap <C-j> <Down>
+"inoremap <C-k> <Up>
+"inoremap <C-h> <Left> " この設定を有効にしてたの忘れてハマった
+"inoremap <C-l> <Right>
 " インサートモードのjjでEsc
 "inoremap <silent> jj <ESC>
 "inoremap <silent> <C-j> <esc>
