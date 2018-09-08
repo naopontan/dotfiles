@@ -157,6 +157,9 @@ inoremap <silent> <C-[> <ESC>
 " ビジュアルモード時vで行末まで選択
 "vnoremap v $h
 
+" <C-l> でハイライトを消す
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
 "------------------------------------
 " NERDTree
 "------------------------------------
