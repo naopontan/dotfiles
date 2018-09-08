@@ -11,7 +11,7 @@ endif
 "------------------------------------
 " Basic
 "------------------------------------
-"let mapleader="," " <Leader>キー
+let mapleader="," " <Leader>キー
 "set scrolloff=5 " スクロール時の余白確保
 "set textwidth=0 " 自動で折り返しをしない
 "set autoread " 自動読み直し
