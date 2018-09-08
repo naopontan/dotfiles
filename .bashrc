@@ -6,7 +6,7 @@
 #fi
 
 # User specific aliases and functions
-alias r='rails'
+#alias r='rails'
 #alias irb='pry'
 alias rm='rm -i'
 alias more='less'
