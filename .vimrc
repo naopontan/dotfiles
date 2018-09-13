@@ -119,9 +119,16 @@ set hlsearch " 検索文字をハイライト
 "------------------------------------
 " Complete
 "------------------------------------
-"set wildmenu " コマンド補完を強化
+set wildmenu " コマンド補完を強化
 "set wildchar=<tab> " コマンド補完開始キー
-"set wildmode=list:longest " リスト表示
+"set wildmode= " 最初のマッチのみ
+"set wildmode=full " TABを押すごとに次のマッチを補完する。wildmenuが有効ならwildmenuを開始する
+"set wildmode=longest " 共通する最長の部分まで補完する
+"set wildmode=list " マッチするものをリスト表示する
+"set wildmode=longest:full " longestと同じだが、wildmenuが有効ならwildmenuを開始する
+"set wildmode=list:full "マッチするものをリスト表示しつつ、TABを押すごとに次のマッチを補完
+"set wildmode=list:longest " リスト表示 ※お気に入り
+"set wildmode=longest,full " http://boscono.hatenablog.com/entry/2013/11/17/230740
 "set history=1000 " コマンド・検索パターン履歴数
 "set complete+=k " 補完に辞書ファイル追加
 
