@@ -38,3 +38,6 @@ repo = 'tomtom/tcomment_vim'
 # '%' による括弧の対応付け
 [[plugins]]
 repo = 'vim-scripts/ruby-matchit'
+
+[[plugins]]
+repo = 'mattn/emmet-vim'
