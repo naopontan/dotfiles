@@ -167,6 +167,10 @@ inoremap <silent> <C-[> <ESC>
 " <C-l> でハイライトを消す
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
+
+nnoremap <Leader>w :w<CR> " 保存
+nnoremap <Leader>q :wq<CR> " 保存&quit
+
 "------------------------------------
 " NERDTree
 "------------------------------------
