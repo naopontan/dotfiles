@@ -158,8 +158,8 @@ inoremap  <C-a> <HOME>
 
 " インサートモードでのEsc
 "inoremap <silent> jj <ESC>
-"inoremap <silent> <C-j> <ESC>
-inoremap <silent> <C-[> <ESC>
+inoremap <silent> <C-j> <ESC>
+"inoremap <silent> <C-[> <ESC> " これ有効にしたら、 insert モード時のペーストがうまく機能しない(T_T)
 
 " ビジュアルモード時vで行末まで選択
 "vnoremap v $h
