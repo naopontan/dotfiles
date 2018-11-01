@@ -41,3 +41,6 @@ repo = 'vim-scripts/ruby-matchit'
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
