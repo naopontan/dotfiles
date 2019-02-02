@@ -171,6 +171,9 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap <Leader>w :w<CR> " 保存
 nnoremap <Leader>q :wq<CR> " 保存&quit
 
+" tagsジャンプの時に複数ある時は一覧表示
+nnoremap <C-]> g<C-]>
+
 "------------------------------------
 " NERDTree
 "------------------------------------
