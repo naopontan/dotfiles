@@ -199,20 +199,23 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " neosnippet
 "------------------------------------
 " Plugin key-mappings.
-"imap <C-k> <Plug>(neosnippet_expand_or_jump)
-"smap <C-k> <Plug>(neosnippet_expand_or_jump)
+imap <C-k> <Plug>(neosnippet_expand_or_jump)
+smap <C-k> <Plug>(neosnippet_expand_or_jump)
 
 " SuperTab like snippets behavior.
-"imap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
-"smap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+imap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 " For snippet_complete marker.
-"if has('conceal')
-"  set conceallevel=2 concealcursor=i
-"endif
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
 
 " Tell Neosnippet about the other snippets
+
+" スニペット集
 "let g:neosnippet#snippets_directory='~/dotfiles/.vim/snippets'
+let g:neosnippet#snippets_directory='~/.cache/dein/repos/github.com/Shougo/neosnippet-snippets/neosnippets'
 
 " ------------------------------------
 " grep.vim
