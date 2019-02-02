@@ -10,6 +10,11 @@ repo = 'Shougo/neosnippet.vim'
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
 
+# ウィンドウサイズの変更、 `<C-w>>` を簡単にしたい為
+# https://qiita.com/tekkoc/items/98adcadfa4bdc8b5a6ca
+[[plugins]]
+repo = 'kana/vim-submode'
+
 [[plugins]]
 repo = 'vim-ruby/vim-ruby'
 
