@@ -62,3 +62,5 @@ alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
+
+eval "$(direnv hook zsh)"
