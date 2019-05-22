@@ -16,6 +16,7 @@ alias ltr='ls -G -TltrF'
 #alias vi='nvim'
 alias cp='cp -i'
 alias be='bundle exec'
+alias vscode='code'
 
 # %m: ホスト名(省略版)
 # %n: ユーザ名($USERNAME)
