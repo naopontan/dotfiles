@@ -24,6 +24,7 @@ let mapleader="," " <Leader>キー
 set showcmd " コマンドをステータス行に表示
 set showmode " 現在のモードを表示
 "set modelines=0 " モードラインは無効
+set binary noendofline
 
 "------------------------------------
 " Show
