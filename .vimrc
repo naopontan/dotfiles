@@ -243,7 +243,7 @@ autocmd FileType html,css EmmetInstall
 "------------------------------------
 " The prefix key.
 nnoremap    [unite]   <Nop>
-nmap    <Leader>f [unite]
+nmap    <Leader>u [unite]
 
 "" バッファ一覧
 nnoremap <silent> [unite]b :<C-u>Unite buffer<CR>
