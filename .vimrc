@@ -242,13 +242,13 @@ autocmd FileType html,css EmmetInstall
 " unite.vim
 "------------------------------------
 " The prefix key.
-"nnoremap    [unite]   <Nop>
-"nmap    <Leader>f [unite]
+nnoremap    [unite]   <Nop>
+nmap    <Leader>f [unite]
 
 "" バッファ一覧
-"nnoremap <silent> [unite]b :<C-u>Unite buffer<CR>
+nnoremap <silent> [unite]b :<C-u>Unite buffer<CR>
 "" ファイル一覧
-"nnoremap <silent> [unite]f :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+nnoremap <silent> [unite]f :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 "" ブックマーク一覧
 "nnoremap <silent> [unite]c :<C-u>Unite bookmark<CR>
 "" 最近使ったファイルの一覧
