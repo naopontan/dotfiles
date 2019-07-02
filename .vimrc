@@ -171,6 +171,7 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 nnoremap <Leader>w :w<CR> " 保存
 nnoremap <Leader>q :wq<CR> " 保存&quit
+nnoremap <Leader>n :set invnumber<CR> " 行番号表示のトグル
 
 " tagsジャンプの時に複数ある時は一覧表示
 nnoremap <C-]> g<C-]>
