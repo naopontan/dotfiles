@@ -50,9 +50,9 @@ autoload -U compinit
 compinit
 
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/imagemagick@6/lib"
-export CPPFLAGS="-I/usr/local/opt/imagemagick@6/include"
-export PKG_CONFIG_PATH="/usr/local/opt/imagemagick@6/lib/pkgconfig"
+# export LDFLAGS="-L/usr/local/opt/imagemagick@6/lib"
+# export CPPFLAGS="-I/usr/local/opt/imagemagick@6/include"
+# export PKG_CONFIG_PATH="/usr/local/opt/imagemagick@6/lib/pkgconfig"
 
 export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
@@ -90,6 +90,8 @@ eval "$(direnv hook zsh)"
 # For pkg-config to find openssl you may need to set:
 #   export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+
+# 以下の変数は imagemagick と重複してる。コンパイル時にだけ必要と判断しコメント化した
+# export LDFLAGS="-L/usr/local/opt/openssl/lib"
+# export CPPFLAGS="-I/usr/local/opt/openssl/include"
+# export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
