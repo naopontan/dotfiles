@@ -51,3 +51,9 @@ repo = 'mattn/emmet-vim'
 
 [[plugins]]
 repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'skanehira/translate.vim'
+
+[[plugins]]
+repo = 'vim-jp/vimdoc-ja'
