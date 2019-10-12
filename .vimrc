@@ -1,3 +1,5 @@
+" memo: .vimrc の再読み込みは `:source ~/.vimrc`
+
 if &compatible
   set nocompatible               " Be iMproved
 endif
@@ -40,6 +42,7 @@ set listchars=tab:>\ ,extends:<
 "highlight ZenkakuSpace cterm=underline ctermfg=red guibg=darkgray
 "match ZenkakuSpace /　/
 set cursorline " カーソル行をハイライト
+highlight CursorLine gui=underline guifg=NONE guibg=NONE
 "set ttyfast " 高速ターミナル接続を行う
 "set paste " vim-endwiseが効かない see -> https://github.com/tpope/vim-endwise/issues/15
 
