@@ -29,7 +29,9 @@ alias vscode='code'
 PROMPT='(%*) %~ %# '
 
 source ~/src/github.com/olivierverdier/zsh-git-prompt/zshrc.sh
-PROMPT='%B%~%b$(git_super_status) %# '
+#PROMPT='%B%~%b$(git_super_status) %# '
+PROMPT='
+%B%~%b$(git_super_status) %# '
 
 
 # Ctrl+Dでログアウトしてしまうことを防ぐ
