@@ -4,6 +4,7 @@ SAVEHIST=100000                       # 保存される履歴の数
 setopt extended_history               # 履歴ファイルに時刻を記録
 setopt hist_ignore_dups               # 重複を記録しない
 setopt hist_no_store                  # historyコマンドは履歴に登録しない
+# setopt extended_glob  # ファイル名のパターンマッチの制御。 `(#F)` などと記述する。F は決められた文字
 function history-all { history -E 1 } # 全履歴の一覧を出力する
 alias h='history -E 1'
 
