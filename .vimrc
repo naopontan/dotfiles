@@ -95,7 +95,7 @@ if has("autocmd")
   "autocmd FileType sql        setlocal ts=2 sts=2 sw=2 et
   "autocmd FileType scss       setlocal ts=2 sts=2 sw=2 et
   "autocmd FileType coffee     setlocal ts=2 sts=2 sw=2 et nowrap
-  "autocmd FileType html,xhtml,css,javascript      setlocal ts=2 sts=2 sw=2 et
+  autocmd FileType html,xhtml,css,javascript,json      setlocal ts=2 sts=2 sw=2 et
   "
   "autocmd BufNewFile,BufRead *.html  setlocal ft=xhtml
   "autocmd BufNewFile,BufRead *.scss  setlocal ft=scss
