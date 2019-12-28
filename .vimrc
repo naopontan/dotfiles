@@ -282,8 +282,7 @@ if dein#load_state(s:dein_dir)
 
   " プラグインリストを収めた TOML ファイル
   " 予め TOML ファイルを用意しておく
-  " TODO: 以下で "~/.config/nvim/" と、 nvim のフォルダになってるのはご愛嬌。
-  let g:rc_dir    = expand("~/.config/nvim/")
+  let g:rc_dir    = expand("~/.config/vim/")
   let s:toml      = g:rc_dir . '/dein.toml'
   let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
 
