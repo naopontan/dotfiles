@@ -268,7 +268,9 @@ nnoremap <silent> [unite]f :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 "au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 
 " --- takaesu. true color を使う
-set termguicolors
+if (has("termguicolors"))
+  set termguicolors
+endif
 
 "dein Scripts-----------------------------
 
