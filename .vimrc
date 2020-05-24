@@ -18,7 +18,7 @@ let mapleader="," " <Leader>キー
 "set textwidth=0 " 自動で折り返しをしない
 "set autoread " 自動読み直し
 "set hidden " 編集中でも他のファイルを開けるようにする
-"set backspace=indent,eol,start "バックスペースキーで削除できるものを指定
+set backspace=indent,eol,start "バックスペースキーで削除できるものを指定
 "set formatoptions=lmoq "テキスト整形オプション，マルチバイト系を追加
 "set vb t_vb= " ビープ音を鳴らさない
 "set browsedir=buffer " Exploreの初期ディレクトリ
