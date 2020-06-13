@@ -57,3 +57,6 @@ repo = 'skanehira/translate.vim'
 
 [[plugins]]
 repo = 'vim-jp/vimdoc-ja'
+
+[[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'

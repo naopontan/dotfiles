@@ -272,6 +272,13 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
+"------------------------------------
+" ctrlp.vim
+"------------------------------------
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.jpg,*.png
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|build|tmp|vendor)$'
+
+
 "dein Scripts-----------------------------
 
 " Required:
