@@ -98,3 +98,8 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 # export LDFLAGS="-L/usr/local/opt/openssl/lib"
 # export CPPFLAGS="-I/usr/local/opt/openssl/include"
 # export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+
+# オプション一覧の出力を分かりやすくする(set -o の結果をわかりやすく) https://qiita.com/mollifier/items/26c67347734f9fcda274
+function showoptions() {
+  set -o | sed -e 's/^no\(.*\)on$/\1  off/' -e 's/^no\(.*\)off$/\1  on/'
+}
