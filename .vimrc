@@ -146,6 +146,12 @@ set wildmenu " コマンド補完を強化
 "------------------------------------
 " Other
 "------------------------------------
+" map キーの定義
+" nmap - normal
+" imap - insert mode
+" vmap - visual mode
+" noremap - キーの定義。ただしマップが入れ子や再帰的になることはない。map より混乱減る
+" nnoremap - noremap の normal 版
 
 " .vimrcや.gvimrcを編集するためのKey-mappingを定義する
 "nnoremap <silent> <Space>ev  :<C-u>edit $MYVIMRC<CR>
@@ -171,11 +177,14 @@ inoremap <silent> <C-j> <ESC>
 " <C-l> でハイライトを消す
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
+nnoremap <Leader>w :write<CR>
+nnoremap <Leader>q :quit<CR>
+nnoremap <Leader>Q :wq<CR>
 
-nnoremap <Leader>w :w<CR> " 保存
-nnoremap <Leader>q :q<CR> " quit
-nnoremap <Leader>Q :wq<CR> " 保存&quit
-nnoremap <Leader>n :set invnumber<CR> " 行番号表示のトグル
+" 行番号表示のトグル
+nnoremap <Leader>n :set invnumber<CR>
+
+nnoremap <Leader>E :Explore<CR>
 
 " tagsジャンプの時に複数ある時は一覧表示
 nnoremap <C-]> g<C-]>
